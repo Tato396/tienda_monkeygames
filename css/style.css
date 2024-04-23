@@ -1,0 +1,111 @@
+.index_precio {
+    color: #00235B;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.index_subscrito {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.index_stock {
+    color: #00235B;
+    font-weight: bolder;
+}
+.cards-container {
+    margin-top: 84px;
+    margin-bottom: 84px;
+}
+
+.paragraph {
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.ficha_foto {
+    height: 100%;
+    float: right;
+    border: 1px solid gray;
+}
+
+.ficha_titulo {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.ficha_disponible {
+    color: green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.ficha_precio {
+    font-size: 40px;
+}
+
+.titulo-bodega{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.estilo-cabeza{    
+    background-color:darkred;
+    font-size: 20px; 
+    color: white;
+}
+
+.estilo-cuerpo{
+    background-color: darkgray
+}
+
+#boleta_tabla_estados {
+    float: right;
+}
+
+#boleta_tabla_estados td {
+    text-align: center;
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+#imagen-estado{
+    border-radius:100px;
+}
+
+.texto-boleta{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#tabla-admin{
+    left: auto; 
+    width: 40%; 
+    margin-top: 25px;
+    margin-left: 25px;
+} 
+
+#tabla-boletas{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#tabla-hventas{
+    margin-top: 5%; 
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#misdatos-foto{
+    margin-left: 12%;
+    margin-top: 6%;
+}
+
+#tabla-iva{
+    padding-right: 55%;
+
+}

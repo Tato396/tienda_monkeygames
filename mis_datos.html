@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis datos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="menu"></div>
+
+    <h1>Mis datos</h1>
+    
+    <!-- Datos del cliente -->
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="container-fluid">
+            <div class="row" style="margin: 10%;">
+                <div style="border: 2px solid black;">
+                    <div class="row">
+
+                        <!-- Campos del ingreso -->
+                        <div class="col-sm-12 col-md-4" style="margin: 5%;">
+                            <!-- Campo RUT -->
+                            <div class="col">
+                                <label for="rut" class="form-label">Rut: </label>
+                                <input required placeholder="Ej: 12345678-7" 
+                                    type="text" class="form-control" 
+                                    id="rut" name="rut" aria-describedby="rutHelp">
+                                <div id="rutHelp" class="form-text">
+                                    Escriba el RUT sin puntos y con guión.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo RUT es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo Nombre -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre: </label>
+                                <input required placeholder="Ej: Pedro" 
+                                    type="text" class="form-control" 
+                                    id="nombre" name="nombre" aria-describedby="nombreHelp">
+                                <div id="nombreHelp" class="form-text">
+                                    Escriba su nombre.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo nombre es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo Apellidos -->
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellidos: </label>
+                                <input required placeholder="Ej: Perez Dias" 
+                                    type="text" class="form-control" 
+                                    id="apellido" name="apellido" aria-describedby="apellidoHelp">
+                                <div id="apellidoHelp" class="form-text">
+                                    Escriba sus 2 apellidos.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo apellidos es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo Correo -->
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo: </label>
+                                <input required placeholder="Ej: p.perez@gmail.com" 
+                                    type="email" class="form-control" 
+                                    id="correo" name="correo" aria-describedby="correoHelp">
+                                <div id="correoHelp" class="form-text">
+                                    Escriba su correo.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo Correo es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo direccion -->
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Dirección: </label>
+                                <textarea required placeholder="Ej: Calle Libertadores 331, Maipú" 
+                                    class="form-control" rows="3"
+                                    id="direccion" name="direccion" aria-describedby="direccionHelp"></textarea>
+                                <div id="direccionHelp" class="form-text">
+                                    Escriba su dirección.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo Dirección es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo Subscripción -->
+                            <div class="mb-3">
+                                <label for="subscrito" class="form-label">Con subscripción</label>
+                                <input type="checkbox" id="subscrito" name="subscrito">
+                                <div id="subscritoHelp" class="form-text">
+                                    Deseo subscribirme con un aporte de $3.000 mensuales
+                                    y obtener un 5% de descuento en mis compras.
+                                </div>
+                            </div>
+    
+                            <!-- Campo Contraseña -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña: </label>
+                                <input type="password" required placeholder="Escriba aquí su contraseña" 
+                                    class="form-control"
+                                    id="password" name="password" aria-describedby="passwordHelp">
+                                <div id="passwordHelp" class="form-text">
+                                    La contraseña debe tener un número, un símbolo
+                                    y además debe tener al menos 8 caracteres.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo contraseña es obligatorio
+                                </div>
+                            </div>
+    
+                            <!-- Campo Repetir Contraseña -->
+                            <div class="mb-3">
+                                <label for="password2" class="form-label">Repetir contraseña: </label>
+                                <input type="password" required placeholder="Repita su contraseña" 
+                                    class="form-control"
+                                    id="password2" name="password2" aria-describedby="password2Help">
+                                <div id="password2Help" class="form-text">
+                                    La contraseña debe ser igual que la de arriba.
+                                </div>
+                                <div class="invalid-feedback">
+                                    El campo repetir contraseña es obligatorio
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <!-- Foto -->
+                        <div class="col" id="misdatos-foto">
+                            <img class="card-img-top" src="img/empresario.png" alt="" style="width: 300px;">
+                            <br><br>
+                            <input type="file" class="btn btn-ptimary">
+                        </div>
+                        
+                        
+    
+                    </div>
+                    <br>
+                    <!-- Botonera -->
+                    <div class="row">
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="reset" class="btn btn-secondary">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                       
+        </div>  
+    </form>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
